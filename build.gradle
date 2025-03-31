@@ -20,18 +20,26 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-graphql'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	runtimeOnly 'com.h2database:h2'
+	    // Netflix DGS Framework (GraphQL)
+    implementation 'com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter:9.2.0'
+    implementation 'com.netflix.graphql.dgs:graphql-dgs-extended-scalars:9.2.0'
+    
+	    // JSON processing
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+
+	compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.graphql:spring-graphql-test'
-	testImplementation 'org.springframework.security:spring-security-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 generateJava {
 	schemaPaths = ["${projectDir}/src/main/resources/graphql-client"]
-	packageName = 'com.opencampus.devproject.codegen'
+	packageName = 'com.opencampus.devproject'
 	generateClient = true
 }
 

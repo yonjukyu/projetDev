@@ -1,0 +1,27 @@
+type Model3D {
+  id: ID!
+  name: String!
+  description: String
+  complexity: Int
+  vertices: Int
+  polygons: Int
+  status: Status!
+  createdAt: String!
+  modelUrl: String
+}
+
+enum Status {
+  PENDING
+  GENERATING
+  COMPLETED
+  FAILED
+}
+
+type Query {
+  getModel(id: ID!): Model3D
+  getAllModels: [Model3D!]!
+}
+
+type Mutation {
+  generateModel(prompt: String!): Model3D!
+}
