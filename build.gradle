@@ -23,7 +23,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	runtimeOnly 'com.h2database:h2'
 	    // Netflix DGS Framework (GraphQL)
-    implementation 'com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter:9.2.0'
+    implementation 'com.netflix.graphql.dgs:graphql-dgs-spring-graphql-starter:9.2.0'
     implementation 'com.netflix.graphql.dgs:graphql-dgs-extended-scalars:9.2.0'
     
 	    // JSON processing

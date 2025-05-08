@@ -1,5 +1,8 @@
 package com.opencampus.devproject.model;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Model3D {
     private String id;
     private String name;
@@ -11,6 +14,12 @@ public class Model3D {
     private String createdAt;
     private String modelUrl;
     
+    // Constructeur par défaut
+    public Model3D() {
+        this.createdAt = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
+    }
+    
+    // Getters et setters
     public String getId() {
         return id;
     }
