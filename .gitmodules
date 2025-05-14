@@ -1,0 +1,3 @@
+[submodule "scriptPyhton/scriptPyhton/3dtopia"]
+	path = scriptPyhton/scriptPyhton/3dtopia
+	url = https://github.com/3DTopia/3DTopia.git

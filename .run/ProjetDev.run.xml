@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ProjetDev" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="devproject.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.opencampus.devproject.DevprojectApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
