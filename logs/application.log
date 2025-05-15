@@ -1,132 +1,20 @@
-2025-04-14 15:58:45 [main] INFO  c.o.devproject.DevprojectApplication - Starting DevprojectApplication using Java 17.0.12 with PID 2136 (C:\Users\hugod\Documents\dev\projetDev\devproject\devproject\build\classes\java\main started by hugod in C:\Users\hugod\Documents\dev\projetDev\devproject\devproject)
-2025-04-14 15:58:45 [main] DEBUG c.o.devproject.DevprojectApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
-2025-04-14 15:58:45 [main] INFO  c.o.devproject.DevprojectApplication - No active profile set, falling back to 1 default profile: "default"
-2025-04-14 15:58:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-04-14 15:58:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-04-14 15:58:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-04-14 15:58:47 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-04-14 15:58:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1627 ms
-2025-04-14 15:58:47 [main] INFO  c.o.devproject.services.MeshyService - MeshyService initialisé avec l'URL de base: https://api.meshy.ai/openapi/v2
-2025-04-14 15:58:47 [main] INFO  c.o.d.s.Model3DGenerationService - Model3DGenerationService initialisé
-2025-04-14 15:58:47 [main] INFO  c.n.g.d.s.ReloadableGraphQLSource - Rebuilding GraphQLSource
-2025-04-14 15:58:48 [main] INFO  c.n.g.d.s.a.DgsSpringGraphQLAutoConfiguration - ***Schema Report***
+2025-05-09 20:58:53 [main] INFO  c.o.devproject.DevprojectApplication - Starting DevprojectApplication using Java 21.0.7 with PID 24068 (D:\DEV\projetDev\build\classes\java\main started by hugot in D:\DEV\projetDev)
+2025-05-09 20:58:53 [main] DEBUG c.o.devproject.DevprojectApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-09 20:58:53 [main] INFO  c.o.devproject.DevprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 20:58:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-09 20:58:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-09 20:58:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-05-09 20:58:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-09 20:58:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1547 ms
+2025-05-09 20:58:55 [main] INFO  c.n.g.d.s.ReloadableGraphQLSource - Rebuilding GraphQLSource
+2025-05-09 20:58:55 [main] DEBUG c.n.g.dgs.internal.DgsSchemaProvider - DGS initialized schema in 383ms
+2025-05-09 20:58:55 [main] INFO  c.n.g.d.s.a.DgsSpringGraphQLAutoConfiguration - ***Schema Report***
 Unmapped fields: [Query._service]
 Unmapped registrations: {}
 Unmapped arguments: []
 Skipped types: []
 
-2025-04-14 15:58:48 [main] INFO  o.s.b.a.g.s.GraphQlWebMvcAutoConfiguration - GraphQL endpoint HTTP POST /graphql
-2025-04-14 15:58:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-04-14 15:58:48 [main] INFO  c.o.devproject.DevprojectApplication - Started DevprojectApplication in 4.161 seconds (process running for 4.733)
-2025-04-14 15:59:29 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-14 15:59:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-04-14 15:59:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2025-04-14 15:59:54 [http-nio-8080-exec-2] INFO  c.o.d.s.Model3DGenerationService - Demande de génération d'un modèle avec le prompt: 'un baton de pluie bleu blanc rouge'
-2025-04-14 15:59:54 [http-nio-8080-exec-2] DEBUG c.o.d.s.Model3DGenerationService - ID généré pour le nouveau modèle: 961c4863-df6a-4296-82f5-9df2a821d221
-2025-04-14 15:59:54 [http-nio-8080-exec-2] DEBUG c.o.d.s.Model3DGenerationService - Modèle initial créé et stocké dans le cache
-2025-04-14 15:59:54 [http-nio-8080-exec-2] DEBUG c.o.d.s.Model3DGenerationService - Démarrage du processus de génération asynchrone
-2025-04-14 15:59:54 [ForkJoinPool.commonPool-worker-1] INFO  c.o.d.s.Model3DGenerationService - Début du processus asynchrone de génération pour le modèle: 961c4863-df6a-4296-82f5-9df2a821d221
-2025-04-14 15:59:54 [ForkJoinPool.commonPool-worker-1] DEBUG c.o.d.s.Model3DGenerationService - Appel du service Meshy pour initier la génération
-2025-04-14 15:59:54 [ForkJoinPool.commonPool-worker-1] DEBUG c.o.devproject.services.MeshyService - Démarrage de la génération de modèle avec le prompt: 'un baton de pluie bleu blanc rouge'
-2025-04-14 15:59:54 [ForkJoinPool.commonPool-worker-1] DEBUG c.o.devproject.services.MeshyService - Envoi de la requête à: https://api.meshy.ai/openapi/v2/text-to-3d
-2025-04-14 15:59:54 [ForkJoinPool.commonPool-worker-1] DEBUG o.s.web.client.RestTemplate - HTTP POST https://api.meshy.ai/openapi/v2/text-to-3d
-2025-04-14 15:59:54 [ForkJoinPool.commonPool-worker-1] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
-2025-04-14 15:59:54 [ForkJoinPool.commonPool-worker-1] DEBUG o.s.web.client.RestTemplate - Writing [{mode=high-quality, art_style=realistic, should_remesh=true, prompt=un baton de pluie bleu blanc rouge}] as "application/json"
-2025-04-14 15:59:54 [ForkJoinPool.commonPool-worker-1] DEBUG o.s.web.client.RestTemplate - Response 402 PAYMENT_REQUIRED
-2025-04-14 15:59:55 [ForkJoinPool.commonPool-worker-1] ERROR c.o.devproject.services.MeshyService - Erreur lors de l'initialisation de la génération du modèle
-org.springframework.web.client.HttpClientErrorException: 402 Payment Required on POST request for "https://api.meshy.ai/openapi/v2/text-to-3d": "{"message":"NoMorePendingTasks: Task creation on the free plan is no longer supported. To continue creating tasks, please upgrade your plan. You can manage your plan at https://www.meshy.ai/settings/subscription"}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:136)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
-	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:518)
-	at com.opencampus.devproject.services.MeshyService.initiateModelGeneration(MeshyService.java:61)
-	at com.opencampus.devproject.services.Model3DGenerationService.generateModelAsync(Model3DGenerationService.java:78)
-	at com.opencampus.devproject.services.Model3DGenerationService.lambda$generateModel$0(Model3DGenerationService.java:58)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
-2025-04-14 15:59:55 [ForkJoinPool.commonPool-worker-1] ERROR c.o.d.s.Model3DGenerationService - Erreur pendant la génération du modèle 961c4863-df6a-4296-82f5-9df2a821d221: Échec de l'initialisation de la génération du modèle: 402 Payment Required on POST request for "https://api.meshy.ai/openapi/v2/text-to-3d": "{"message":"NoMorePendingTasks: Task creation on the free plan is no longer supported. To continue creating tasks, please upgrade your plan. You can manage your plan at https://www.meshy.ai/settings/subscription"}"
-java.lang.RuntimeException: Échec de l'initialisation de la génération du modèle: 402 Payment Required on POST request for "https://api.meshy.ai/openapi/v2/text-to-3d": "{"message":"NoMorePendingTasks: Task creation on the free plan is no longer supported. To continue creating tasks, please upgrade your plan. You can manage your plan at https://www.meshy.ai/settings/subscription"}"
-	at com.opencampus.devproject.services.MeshyService.initiateModelGeneration(MeshyService.java:73)
-	at com.opencampus.devproject.services.Model3DGenerationService.generateModelAsync(Model3DGenerationService.java:78)
-	at com.opencampus.devproject.services.Model3DGenerationService.lambda$generateModel$0(Model3DGenerationService.java:58)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
-Caused by: org.springframework.web.client.HttpClientErrorException: 402 Payment Required on POST request for "https://api.meshy.ai/openapi/v2/text-to-3d": "{"message":"NoMorePendingTasks: Task creation on the free plan is no longer supported. To continue creating tasks, please upgrade your plan. You can manage your plan at https://www.meshy.ai/settings/subscription"}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:136)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
-	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:518)
-	at com.opencampus.devproject.services.MeshyService.initiateModelGeneration(MeshyService.java:61)
-	... 9 common frames omitted
-2025-04-14 15:59:55 [ForkJoinPool.commonPool-worker-1] INFO  c.o.d.s.Model3DGenerationService - Statut du modèle 961c4863-df6a-4296-82f5-9df2a821d221 mis à jour à FAILED
-2025-04-14 16:00:07 [http-nio-8080-exec-3] DEBUG c.o.d.s.Model3DGenerationService - Récupération du modèle avec l'ID: 961c4863-df6a-4296-82f5-9df2a821d221
-2025-04-14 16:00:07 [http-nio-8080-exec-3] DEBUG c.o.d.s.Model3DGenerationService - Modèle trouvé: status=FAILED, vertices=1000, polygons=2000
-2025-04-14 16:25:49 [main] INFO  c.o.devproject.DevprojectApplication - Starting DevprojectApplication using Java 17.0.12 with PID 19460 (C:\Users\hugod\Documents\dev\projetDev\devproject\devproject\build\classes\java\main started by hugod in C:\Users\hugod\Documents\dev\projetDev\devproject\devproject)
-2025-04-14 16:25:49 [main] DEBUG c.o.devproject.DevprojectApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
-2025-04-14 16:25:49 [main] INFO  c.o.devproject.DevprojectApplication - No active profile set, falling back to 1 default profile: "default"
-2025-04-14 16:26:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-04-14 16:26:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-04-14 16:26:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-04-14 16:26:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-04-14 16:26:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 50253 ms
-2025-04-14 16:26:46 [main] INFO  c.o.d.s.Model3DGenerationService - Model3DGenerationService initialisé
-2025-04-14 16:26:46 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'meshyService' defined in file [C:\Users\hugod\Documents\dev\projetDev\devproject\devproject\build\classes\java\main\com\opencampus\devproject\services\MeshyService.class]: Unexpected exception during bean creation
-2025-04-14 16:26:46 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2025-04-14 16:26:50 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-04-14 16:26:50 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'meshyService' defined in file [C:\Users\hugod\Documents\dev\projetDev\devproject\devproject\build\classes\java\main\com\opencampus\devproject\services\MeshyService.class]: Unexpected exception during bean creation
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:536)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:347)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.opencampus.devproject.DevprojectApplication.main(DevprojectApplication.java:10)
-Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'meshy.api-key' in value "${meshy.api-key}"
-	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
-	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:423)
-	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:128)
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:118)
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:114)
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:255)
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:226)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:201)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:971)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1577)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1555)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	... 16 common frames omitted
+2025-05-09 20:58:55 [main] INFO  o.s.b.a.g.s.GraphQlWebMvcAutoConfiguration - GraphQL endpoint HTTP POST /graphql
+2025-05-09 20:58:55 [main] DEBUG c.n.g.dgs.internal.DgsSchemaProvider - DGS initialized schema in 38ms
+2025-05-09 20:58:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-09 20:58:56 [main] INFO  c.o.devproject.DevprojectApplication - Started DevprojectApplication in 3.842 seconds (process running for 4.652)

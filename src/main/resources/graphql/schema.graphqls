@@ -1,0 +1,10 @@
+type Query {
+    generate3DTopia(text: String!): ScriptResult
+}
+
+type ScriptResult {
+    output: String
+    error: String
+    exitCode: Int
+    generatedFilePath: String
+}
